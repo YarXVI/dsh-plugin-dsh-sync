@@ -27,7 +27,9 @@
     "DESIGN.md",
     "CHANGELOG.md",
     "packaging/",
-    "market/"
+    "market/",
+    "LICENSE",
+    "bootstrap.ps1"
   ],
   "scripts": {
     "test": "node --test --test-isolation=none \"test/*.test.js\"",
@@ -61,5 +63,6 @@
     "p2p",
     "sync",
     "shadow-workspace"
-  ]
+  ],
+  "license": "MIT"
 }
