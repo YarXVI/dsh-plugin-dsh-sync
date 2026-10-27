@@ -1,0 +1,8 @@
+- insert:
+    - id: dsh-sync
+      name: dsh-plugin-dsh-sync
+      config:
+        enabled: true
+        autoStart: true
+        intervalMs: 15000
+        discovery: true
