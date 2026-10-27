@@ -1,0 +1,96 @@
+{
+  "format": 1,
+  "title": {
+    "en": "YarXVI · DSH Plugins",
+    "zh": "YarXVI · DSH 插件源"
+  },
+  "description": {
+    "en": "Plugins by YarXVI for DeepSeek Harness. Currently: dsh-plugin-dsh-sync — LAN peer-to-peer device sync with an embedded shadow workspace.",
+    "zh": "YarXVI 的 DSH 插件源。当前收录：设备同步（局域网两台电脑点对点同步，内置影子工作区）。"
+  },
+  "metadata": {
+    "categories": {
+      "sync": {
+        "title": {
+          "en": "Sync",
+          "zh": "同步"
+        }
+      }
+    },
+    "labels": {
+      "lan": {
+        "title": {
+          "en": "LAN",
+          "zh": "局域网"
+        }
+      },
+      "encrypted": {
+        "title": {
+          "en": "Encrypted",
+          "zh": "端到端加密"
+        }
+      },
+      "no-cloud": {
+        "title": {
+          "en": "No cloud",
+          "zh": "无需云端"
+        }
+      },
+      "shadow-workspace": {
+        "title": {
+          "en": "Shadow workspace",
+          "zh": "影子工作区"
+        }
+      }
+    },
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "dsh-plugin-dsh-sync",
+      "title": {
+        "en": "Device Sync · 设备同步",
+        "zh": "设备同步"
+      },
+      "description": {
+        "en": "Peer-to-peer sync for two DeepSeek Harness machines on the same LAN and account: sessions, workspace, profile/plugins, plugin dependencies, API keys, attachments. Host pushes, sub only receives. Built-in shadow workspace runs a session on the paired machine while you watch and approve locally.",
+        "zh": "同一局域网、同一账号下两台 DSH 的点对点同步：会话、工作区、配置与插件、插件依赖、API Key、附件。主机推送、子机只收；内置影子工作区，会话真实运行在配对电脑上，本机查看与审批。"
+      },
+      "icon": "icon.svg",
+      "author": "YarXVI",
+      "homepage": "https://github.com/YarXVI/dsh-plugin-dsh-sync",
+      "repository": {
+        "url": "https://github.com/YarXVI/dsh-plugin-dsh-sync"
+      },
+      "metadata": {
+        "category": "sync",
+        "keywords": [
+          "sync",
+          "lan",
+          "p2p",
+          "device",
+          "shadow-workspace",
+          "workspace",
+          "sessions"
+        ],
+        "labels": [
+          "lan",
+          "encrypted",
+          "no-cloud",
+          "shadow-workspace"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.10.25",
+          "publishTimestamp": 1793108536,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/YarXVI/dsh-plugin-dsh-sync",
+            "commit": "ecd328ac9125f0225f43cd393664a7dc0a05e0a7"
+          }
+        }
+      ]
+    }
+  ]
+}

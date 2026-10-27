@@ -1,0 +1,65 @@
+{
+  "name": "dsh-plugin-dsh-sync",
+  "version": "0.10.25",
+  "private": false,
+  "type": "module",
+  "description": "LAN peer-to-peer sync for DeepSeek Harness plus Shadow Workspaces: sessions, workspace, settings and plugins across devices on the same account, and a paired device's session running remotely while viewed/approved here.",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./shadow/*": "./shadow/*",
+    "./src/*": "./src/*",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "shadow/",
+    "src/",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "docs/",
+    "README.md",
+    "DESIGN.md",
+    "CHANGELOG.md",
+    "packaging/",
+    "market/"
+  ],
+  "scripts": {
+    "test": "node --test --test-isolation=none \"test/*.test.js\"",
+    "package": "pwsh -NoProfile -File scripts/package.ps1"
+  },
+  "engines": {
+    "node": ">=22.19"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "author": "YarXVI",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YarXVI/dsh-plugin-dsh-sync.git"
+  },
+  "homepage": "https://github.com/YarXVI/dsh-plugin-dsh-sync#readme",
+  "bugs": {
+    "url": "https://github.com/YarXVI/dsh-plugin-dsh-sync/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "lan",
+    "p2p",
+    "sync",
+    "shadow-workspace"
+  ]
+}

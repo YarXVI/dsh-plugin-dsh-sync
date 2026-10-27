@@ -127,16 +127,34 @@ DSH profile 的 pnpm 布局是 `nodeLinker: hoisted`（见 `profiles/<profile>/n
 
 ## 安装（推荐顺序）
 
-1. **插件市场索引**（最快）：在 DSH「插件 → 发现 → 管理索引源」添加上面的 URL，搜索「设备同步」安装。
-   - 主用（CDN，国内更稳）：`https://cdn.jsdelivr.net/gh/YarXVI/dsh-plugin-dsh-sync@main/market/index.json`
-   - 备选（GitHub raw）：`https://raw.githubusercontent.com/YarXVI/dsh-plugin-dsh-sync/main/market/index.json`
-2. **下载发布包**：[Releases](https://github.com/YarXVI/dsh-plugin-dsh-sync/releases) 里的 `dsh-plugin-dsh-sync-0.10.25.zip`，解压后运行 `install.cmd`（不需要 git）。
-3. **从源码安装**：见下方「安装」小节。
+1. **一键安装（不需要 git）**
 
-> 通过 git 源安装需要本机有 `git`；没有 git 的机器请走第 2 或第 3 条。
+   ```powershell
+   irm https://yarxvi.github.io/dsh-plugin-dsh-sync/bootstrap.ps1 | iex
+   ```
+
+   脚本会拉取最新 Release、解压到临时目录、调用插件自带的 `install.ps1`；改动前会备份 profile 的 `package.json`。
+
+2. **插件市场索引**：DSH → 插件 → **发现** → 添加索引源（需先打开实验性的「自定义插件市场」），填：
+
+   ```
+   https://yarxvi.github.io/dsh-plugin-dsh-sync/market/index.json
+   ```
+
+   然后搜索「设备同步」安装。索引就是本仓库的 `market/index.json`，由 GitHub Pages 提供。
+
+3. **git 克隆安装**（有 git 的机器，可锁定版本）：
+
+   ```powershell
+   git clone --depth 1 --branch v0.10.25 https://github.com/YarXVI/dsh-plugin-dsh-sync.git "$env:TEMP\dsh-sync"
+   node "$env:TEMP\dsh-sync\scripts\install-profile.mjs" --profile desktop
+   ```
+
+4. **下载 zip 手动装**：[Releases](https://github.com/YarXVI/dsh-plugin-dsh-sync/releases) → 解压 → `install.cmd`。
+
+> 装完重启 DeepSeek Harness。通过 git 源安装需要本机有 `git`；没有 git 请走第 1 或第 4 条。
 
 ## 安装
-
 ### 用发布包安装（另一台电脑）
 
 把 `dist/dsh-plugin-dsh-sync-0.5.1.zip` 解压到任意目录，双击 `install.cmd`：
