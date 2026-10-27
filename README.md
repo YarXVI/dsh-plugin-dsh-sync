@@ -141,7 +141,7 @@ DSH profile 的 pnpm 布局是 `nodeLinker: hoisted`（见 `profiles/<profile>/n
    https://yarxvi.github.io/dsh-plugin-dsh-sync/market/index.json
    ```
 
-   然后搜索「设备同步」安装。索引就是本仓库的 `market/index.json`，由 GitHub Pages 提供。
+   然后搜索「设备同步」安装。索引条目走 **npm registry**（`dsh-plugin-dsh-sync@0.10.25`），**不需要本机装 git**。
 
 3. **git 克隆安装**（有 git 的机器，可锁定版本）：
 

@@ -58,7 +58,7 @@
       },
       "icon": "icon.svg",
       "author": "YarXVI",
-      "homepage": "https://github.com/YarXVI/dsh-plugin-dsh-sync",
+      "homepage": "https://github.com/YarXVI/dsh-plugin-dsh-sync#readme",
       "repository": {
         "url": "https://github.com/YarXVI/dsh-plugin-dsh-sync"
       },
@@ -83,11 +83,9 @@
       "versions": [
         {
           "version": "0.10.25",
-          "publishTimestamp": 1793108536,
+          "publishTimestamp": 1793111510,
           "source": {
-            "type": "git",
-            "url": "https://github.com/YarXVI/dsh-plugin-dsh-sync",
-            "commit": "ecd328ac9125f0225f43cd393664a7dc0a05e0a7"
+            "type": "npm"
           }
         }
       ]
