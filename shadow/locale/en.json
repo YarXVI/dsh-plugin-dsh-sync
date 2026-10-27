@@ -1,6 +1,0 @@
-{
-  "meta": {
-    "title": "Shadow Workspaces",
-    "description": "Shows workspaces shared by a paired computer; sessions started here really run on that computer, with its live output and approvals forwarded here."
-  }
-}

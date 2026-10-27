@@ -125,6 +125,16 @@ DSH profile 的 pnpm 布局是 `nodeLinker: hoisted`（见 `profiles/<profile>/n
 
 两边都升级后：A 的模型设置与 API Key 会在 B 的下一轮同步里出现。**`cordis.patch.yml` 与 `.credentials.yaml` 都可能被运行中的 DSH 以内存态回写，写回后需要重启 DSH 才能在设置界面看到新值。** B 机流程同样是「升级 → 重启 → 等一轮同步 → 再重启」。
 
+## 安装（推荐顺序）
+
+1. **插件市场索引**（最快）：在 DSH「插件 → 发现 → 管理索引源」添加上面的 URL，搜索「设备同步」安装。
+   - 主用（CDN，国内更稳）：`https://cdn.jsdelivr.net/gh/YarXVI/dsh-plugin-dsh-sync@main/market/index.json`
+   - 备选（GitHub raw）：`https://raw.githubusercontent.com/YarXVI/dsh-plugin-dsh-sync/main/market/index.json`
+2. **下载发布包**：[Releases](https://github.com/YarXVI/dsh-plugin-dsh-sync/releases) 里的 `dsh-plugin-dsh-sync-0.10.25.zip`，解压后运行 `install.cmd`（不需要 git）。
+3. **从源码安装**：见下方「安装」小节。
+
+> 通过 git 源安装需要本机有 `git`；没有 git 的机器请走第 2 或第 3 条。
+
 ## 安装
 
 ### 用发布包安装（另一台电脑）
