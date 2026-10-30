@@ -15,6 +15,12 @@
           "en": "Sync",
           "zh": "同步"
         }
+      },
+      "infra": {
+        "title": {
+          "en": "Infrastructure",
+          "zh": "基础设施"
+        }
       }
     },
     "labels": {
@@ -40,6 +46,24 @@
         "title": {
           "en": "Shadow workspace",
           "zh": "影子工作区"
+        }
+      },
+      "backup": {
+        "title": {
+          "en": "Backup",
+          "zh": "备份"
+        }
+      },
+      "recovery": {
+        "title": {
+          "en": "Recovery",
+          "zh": "恢复"
+        }
+      },
+      "monitoring": {
+        "title": {
+          "en": "Monitoring",
+          "zh": "监控"
         }
       }
     },
@@ -84,6 +108,49 @@
         {
           "version": "0.10.25",
           "publishTimestamp": 1793111510,
+          "source": {
+            "type": "npm"
+          }
+        }
+      ]
+    },
+    {
+      "name": "dsh-disaster-recovery",
+      "title": {
+        "en": "Casket · Disaster Recovery",
+        "zh": "忆匣 / Casket"
+      },
+      "description": {
+        "en": "Real-time content-addressed snapshots of the whole DSH_HOME with one-click restore, quarantine instead of deletion, refuse-to-restore on missing blocks, an offline recovery console when DSH will not boot, encrypted offsite copies, and a crash black box with an external watchdog.",
+        "zh": "实时快照整个 DSH_HOME：内容寻址去重、一键回滚与隔离、缺块拒绝恢复、DSH 起不来也能用外部控制台恢复、异地加密副本、黑匣子心跳与外部看门狗。"
+      },
+      "icon": "icon-casket.png",
+      "author": "YarXVI",
+      "homepage": "https://github.com/YarXVI/dsh-disaster-recovery#readme",
+      "repository": {
+        "url": "https://github.com/YarXVI/dsh-disaster-recovery"
+      },
+      "metadata": {
+        "category": "infra",
+        "keywords": [
+          "backup",
+          "snapshot",
+          "disaster-recovery",
+          "restore",
+          "encryption",
+          "monitoring"
+        ],
+        "labels": [
+          "backup",
+          "recovery",
+          "monitoring",
+          "encrypted"
+        ]
+      },
+      "versions": [
+        {
+          "version": "0.8.0",
+          "publishTimestamp": 1793350215,
           "source": {
             "type": "npm"
           }
